@@ -1,11 +1,13 @@
 some spammers jump in to public mucs, pollute and jump out immediately.
 
-this module helps to prosody administrator to log who joined the room.
+this module helps prosody administrator to log who joined the room.
 
 to add:
 
-put that in your modules directory.
+### copy the module
+put module `mod_muc_jid_logger.lua` in to your modules directory.
 
+### add config
 ```
 Component "conference.example.com" "muc"
     modules_enabled = {
@@ -15,8 +17,7 @@ Component "conference.example.com" "muc"
 
 ```
 
-
-reload prosody
+### reload prosody
 
 ```
 /etc/init.d/prosody reload
